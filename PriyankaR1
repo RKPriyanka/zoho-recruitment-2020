@@ -7,15 +7,10 @@ int main()
 	cin>>word;
 	for(int i = 0; i<= word.length(); i++)
 	{
-		for(int j = word.length(); j>= 0 ; j--)
-		{
-		    if(i == j || i >  word.length()/2 ||j < word.length()/2)
-		    {
-			cout<<word[j]<<"\t";
-		    }
-		    else
-		        cout<<"\t";
-		}
+		for(int k=str.length()-1; k>0; k--)
+		   cout<<" ";
+		for(int j=str.length()/2; j<=i; j++)
+		    cout<<word[j];
 		cout<<"\n";
 	}
 }
